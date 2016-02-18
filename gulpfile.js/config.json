@@ -1,0 +1,66 @@
+{
+  "root": {
+    "src": "./src",
+    "dest": "./public"
+  },
+
+  "tasks": {
+    "browserSync": {
+      "server": {
+        "baseDir": "public"
+      }
+    },
+
+    "js": {
+      "src": "javascripts",
+      "dest": "javascripts",
+      "extractSharedJs": true,
+      "entries": {
+        "app": ["bootstrap-sass", "./app.js"]
+      },
+      "extensions": ["js"]
+    },
+
+    "css": {
+      "src": "stylesheets",
+      "dest": "stylesheets",
+      "autoprefixer": {
+        "browsers": ["last 3 version"]
+      },
+      "sass": {
+        "indentedSyntax": true
+      },
+      "extensions": ["sass", "scss", "css"]
+    },
+
+    "html": {
+      "src": "html",
+      "dest": "./",
+      "dataFile": "data/global.json",
+      "htmlmin": {
+        "collapseWhitespace": true
+      },
+      "extensions": ["html", "json"],
+      "excludeFolders": ["layouts", "shared", "macros", "data", "components"]
+    },
+
+    "images": {
+      "src": "images",
+      "dest": "images",
+      "extensions": ["jpg", "png", "svg", "gif"]
+    },
+
+    "videos": {
+      "src": "videos",
+      "dest": "videos",
+      "extensions": ["mp4"]
+    },
+
+    "iconFont": {
+      "src": "icons",
+      "dest": "fonts",
+      "sassDest": "generated",
+      "extensions": ["woff2", "woff", "eot", "ttf", "svg"]
+    }
+  }
+}
