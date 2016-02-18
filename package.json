@@ -3,7 +3,7 @@
   "version": "0.0.1",
   "description": "Start kit GULP",
   "engines": {
-    "node": "0.12.7",
+    "node": "0.12.2",
     "npm": "2.7.4"
   },
   "repository": {
@@ -24,7 +24,10 @@
     "browser-sync": "^2.9.11",
     "compression": "^1.5.1",
     "del": "^2.0.2",
+    "event-emitter": "^0.3.4",
     "express": "^4.13.1",
+    "file-loader": "^0.8.5",
+    "flickity-as-nav-for": "^1.0.2",
     "gulp": "^3.9.0",
     "gulp-autoprefixer": "^2.3.1",
     "gulp-changed": "^1.2.1",
@@ -51,6 +54,8 @@
     "gulp-util": "^3.0.6",
     "gulp-watch": "^4.3.3",
     "imports-loader": "^0.6.5",
+    "instafeed.js": "^1.4.1",
+    "isotope-layout": "^2.2.2",
     "karma": "0.13.2",
     "karma-chrome-launcher": "^0.2.0",
     "karma-cli": "0.1.0",
@@ -75,7 +80,9 @@
   "dependencies": {
     "bootstrap-sass": "~3.3.5",
     "breakpoint-sass": "^2.6.1",
+    "flickity": "^1.1.1",
     "icheck": "^1.0.2",
-    "jquery": "^2.1.4"
+    "jquery": "^2.1.4",
+    "masonry-layout": "^4.0.0"
   }
 }
